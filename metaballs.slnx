@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="metaballs.vcxproj" Id="3af41e52-7d30-44fe-aea1-aee2a40fae38" />
+  <Project Path="UI/external/glfw/src/glfw.vcxproj" Id="c94c5e62-dec8-39e7-9125-58d17c48b324" />
+  <Project Path="UI/raylib.vcxproj" Id="a42d7d51-6872-3d33-9b7e-d6d778e4d34f" />
+</Solution>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\context.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\init.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\input.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\monitor.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\platform.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\vulkan.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\window.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\egl_context.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\osmesa_context.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\null_init.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\null_monitor.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\null_window.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\null_joystick.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_module.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_time.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_thread.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_init.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_joystick.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_monitor.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_window.c" />
+    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\wgl_context.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\include\GLFW\glfw3.h" />
+    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\include\GLFW\glfw3native.h" />
+    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\internal.h" />
+    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\platform.h" />
+    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\mappings.h" />
+    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\null_platform.h" />
+    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\null_joystick.h" />
+    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_time.h" />
+    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_thread.h" />
+    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_platform.h" />
+    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_joystick.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1854F8A0-0F4C-39EA-A30D-8449D81ED91D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EBEFDA50-2037-32E3-B478-A944C06EC6F2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\context.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\egl_context.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\init.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\input.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\monitor.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\null_init.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\null_joystick.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\null_monitor.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\null_window.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\osmesa_context.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\platform.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\vulkan.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\wgl_context.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\win32_init.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\win32_joystick.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\win32_module.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\win32_monitor.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\win32_thread.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\win32_time.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\win32_window.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\window.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{3C938916-6B9D-3CAF-AFE8-B57FF7C3660C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="raylib.h" />
+    <ClInclude Include="raymath.h" />
+    <ClInclude Include="rcamera.h" />
+    <ClInclude Include="rgestures.h" />
+    <ClInclude Include="rlgl.h" />
+    <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="raudio.cpp" />
+    <ClCompile Include="rcore.cpp" />
+    <ClCompile Include="rmodels.cpp" />
+    <ClCompile Include="rshapes.cpp" />
+    <ClCompile Include="rtext.cpp" />
+    <ClCompile Include="rtextures.cpp" />
+    <ClCompile Include="utils.cpp" />
+  </ItemGroup>
+</Project>
