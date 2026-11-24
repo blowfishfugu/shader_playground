@@ -1,3 +1,10 @@
+//* 2. Altered source versions must be plainly marked as such, and must not be misrepresented
+//* as being the original software.
+//* blowfishfugu was here: This is an altered source version,
+// renamed all c-files to cpp, 
+// renamed Rectangle to RayRect, 
+// handled warnings occuring by permissive-/flag
+
 /**********************************************************************************************
 *
 *   raylib v5.1-dev - A simple and easy-to-use library to enjoy videogames programming (www.raylib.com)

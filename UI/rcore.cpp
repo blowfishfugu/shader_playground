@@ -1,3 +1,11 @@
+//* 2. Altered source versions must be plainly marked as such, and must not be misrepresented
+//* as being the original software.
+//* blowfishfugu was here: This is an altered source version,
+// renamed all c-files to cpp, 
+// renamed Rectangle to RayRect, 
+// handled warnings occuring by permissive-/flag
+
+
 /**********************************************************************************************
 *
 *   rcore - Window/display management, Graphic device/context management and input management

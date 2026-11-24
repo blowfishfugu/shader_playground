@@ -16,8 +16,8 @@ constexpr const char* pixelshader2d = R"fs(
 in vec2 fragTexCoord;
 out vec4 finalColor;
 
-uniform vec3 balls[16]; // x,y,radius
-uniform vec3 ballColors[16]; // r, g, b (normalized [0.0..1.0])
+uniform vec3 balls[32]; // x,y,radius
+uniform vec3 ballColors[32]; // r, g, b (normalized [0.0..1.0])
 uniform int ballCount;
 uniform vec2 resolution;
 uniform float time;           // Elapsed time in seconds
@@ -79,7 +79,7 @@ int main(int argc, char** argv) {
 
 	SetConfigFlags(FLAG_MSAA_4X_HINT
 		| FLAG_VSYNC_HINT
-		| FLAG_WINDOW_TRANSPARENT
+	//	| FLAG_WINDOW_TRANSPARENT
 	);
 	InitWindow(screenWidth, screenHeight, "logo-balls");
 
@@ -110,8 +110,8 @@ int main(int argc, char** argv) {
 	}
 
 	//init balls
-	constexpr int ballCount = 16; //initialized balls
-	constexpr int bufCount = 16; //available balls, ! has to match with shader-uniforms: balls[] and ballColors[]
+	int ballCount = 16; //visible balls
+	constexpr int bufCount = 32; //available balls, ! has to match with shader-uniforms: balls[] and ballColors[]
 	std::array<Metaball, bufCount> balls{}; //(pos.xy), radius
 	std::array<Vector2, bufCount> velocities{}; //xy
 	std::array<Vector3, bufCount> colorData{}; //rgb, normalized[0..1], alpha by shader
@@ -128,7 +128,6 @@ int main(int argc, char** argv) {
 
 	SetShaderValue(shader, shaderLocs[countLoc], &ballCount, SHADER_UNIFORM_INT);
 	SetShaderValueV(shader, shaderLocs[colorsLoc], colorData.data(), SHADER_UNIFORM_VEC3, ballCount);
-
 
 	Vector2 vResolution{ (float)screenWidth,(float)screenHeight };
 	SetShaderValue(shader, shaderLocs[resolutionLoc], &vResolution, SHADER_UNIFORM_VEC2);
