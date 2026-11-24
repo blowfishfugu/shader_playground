@@ -21,7 +21,7 @@
     <ProjectName>raylib</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)/Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
@@ -32,11 +32,11 @@
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)/Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(UserRootDir)/Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)/Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
@@ -48,8 +48,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "$(SolutionDir)PortfolioViewer\UI/external/glfw/include"</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)external/glfw/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "$(SolutionDir)UI/external/glfw/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -68,10 +68,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)PortfolioViewer\UI;$(SolutionDir)PortfolioViewer\UI\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/UI;$(SolutionDir)/UI/external/glfw/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir)PortfolioViewer\UI;$(SolutionDir)PortfolioViewer\UI\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/UI;$(SolutionDir)/UI/external/glfw/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -87,8 +87,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "$(SolutionDir)PortfolioViewer\UI/external/glfw/include"</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)external/glfw/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "$(SolutionDir)/UI/external/glfw/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
@@ -107,10 +107,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)PortfolioViewer\UI;$(SolutionDir)PortfolioViewer\UI\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/UI;$(SolutionDir)/UI/external/glfw/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir)PortfolioViewer\UI;$(SolutionDir)PortfolioViewer\UI\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/UI;$(SolutionDir)/UI/external/glfw/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -123,27 +123,27 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\context.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\init.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\input.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\monitor.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\platform.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\vulkan.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\window.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\egl_context.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\osmesa_context.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\null_init.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\null_monitor.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\null_window.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\null_joystick.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\win32_module.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\win32_time.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\win32_thread.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\win32_init.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\win32_joystick.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\win32_monitor.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\win32_window.obj" />
-    <Object Include="$(SolutionDir)bin\$(Configuration)\glfw.dir\wgl_context.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/context.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/init.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/input.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/monitor.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/platform.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/vulkan.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/window.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/egl_context.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/osmesa_context.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/null_init.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/null_monitor.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/null_window.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/null_joystick.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/win32_module.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/win32_time.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/win32_thread.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/win32_init.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/win32_joystick.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/win32_monitor.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/win32_window.obj" />
+    <Object Include="$(SolutionDir)bin/$(Configuration)/glfw.dir/wgl_context.obj" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="config.h" />
@@ -164,11 +164,11 @@
     <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="external\glfw\src\glfw.vcxproj">
+    <ProjectReference Include="external/glfw/src/glfw.vcxproj">
       <Project>{c94c5e62-dec8-39e7-9125-58d17c48b324}</Project>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)/Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
 </Project>

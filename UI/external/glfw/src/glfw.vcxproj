@@ -74,10 +74,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_GLFW_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\include;C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)external\glfw\include;$(ProjectDir)external\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\include;C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)external\glfw\include;$(ProjectDir)external\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -90,7 +90,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)external\glfw\include;$(ProjectDir)\external\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>
       </ExceptionHandling>
@@ -108,10 +108,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GLFW_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\include;C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\include;C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -123,38 +123,38 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\include\GLFW\glfw3.h" />
-    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\include\GLFW\glfw3native.h" />
-    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\internal.h" />
-    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\platform.h" />
-    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\mappings.h" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\context.c" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\init.c" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\input.c" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\monitor.c" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\platform.c" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\vulkan.c" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\window.c" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\egl_context.c" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\osmesa_context.c" />
-    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\null_platform.h" />
-    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\null_joystick.h" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\null_init.c" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\null_monitor.c" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\null_window.c" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\null_joystick.c" />
-    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_time.h" />
-    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_thread.h" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_module.c" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_time.c" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_thread.c" />
-    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_platform.h" />
-    <ClInclude Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_joystick.h" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_init.c" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_joystick.c" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_monitor.c" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\win32_window.c" />
-    <ClCompile Include="C:\GitRepos\blowfishfugu\curling\sg\viewer\sgview\UI\external\glfw\src\wgl_context.c" />
+    <ClInclude Include="$(ProjectDir)..\include\GLFW\glfw3.h" />
+    <ClInclude Include="$(ProjectDir)..\include\GLFW\glfw3native.h" />
+    <ClInclude Include="internal.h" />
+    <ClInclude Include="platform.h" />
+    <ClInclude Include="mappings.h" />
+    <ClCompile Include="context.c" />
+    <ClCompile Include="init.c" />
+    <ClCompile Include="input.c" />
+    <ClCompile Include="monitor.c" />
+    <ClCompile Include="platform.c" />
+    <ClCompile Include="vulkan.c" />
+    <ClCompile Include="window.c" />
+    <ClCompile Include="egl_context.c" />
+    <ClCompile Include="osmesa_context.c" />
+    <ClInclude Include="null_platform.h" />
+    <ClInclude Include="null_joystick.h" />
+    <ClCompile Include="null_init.c" />
+    <ClCompile Include="null_monitor.c" />
+    <ClCompile Include="null_window.c" />
+    <ClCompile Include="null_joystick.c" />
+    <ClInclude Include="win32_time.h" />
+    <ClInclude Include="win32_thread.h" />
+    <ClCompile Include="win32_module.c" />
+    <ClCompile Include="win32_time.c" />
+    <ClCompile Include="win32_thread.c" />
+    <ClInclude Include="win32_platform.h" />
+    <ClInclude Include="win32_joystick.h" />
+    <ClCompile Include="win32_init.c" />
+    <ClCompile Include="win32_joystick.c" />
+    <ClCompile Include="win32_monitor.c" />
+    <ClCompile Include="win32_window.c" />
+    <ClCompile Include="wgl_context.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
